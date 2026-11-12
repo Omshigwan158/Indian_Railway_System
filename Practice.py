@@ -185,10 +185,116 @@ total = 0
 
 # For Loop 
 
-trains = [{"name": "Rajdhani Express","number":12301,"destination":"New Delhi"},
-          {"name": "Shatabi Express","number":12001,"destination":"Chennai"},
-          {"name": "Duronto Express","number":12291,"destination":"Mumbai"},]
+# trains = [{"name": "Rajdhani Express","number":12301,"destination":"New Delhi"},
+#           {"name": "Shatabi Express","number":12001,"destination":"Chennai"},
+#           {"name": "Duronto Express","number":12291,"destination":"Mumbai"},]
 
-print("Available Trains: ")
-for train in trains:
-    print(f"{train['number']}-{train['name']} to {train['destination']}")
+# print("Available Trains: ")
+# for train in trains:
+#     print(f"{train['number']}-{train['name']} to {train['destination']}")
+
+# print("\n=== Booking Menu ===")
+# choice = 0
+
+# while choice != 3:
+#     print("1. Book Ticket")
+#     print("2. Check Status")
+#     print("3. Exit")
+#     choice = int(input("Enter your choice: "))
+
+#     if choice == 1:
+#         print("Booking ticket ......")
+#     elif choice == 2:
+#         print("Checking Status")
+#     elif choice == 3:
+#         print("Thank you for using Indian Railway!")
+#     else:
+#         print("Invalid Choice!")
+
+# for i in range(0,11):
+#     print(i)
+
+# for i in range(1,21):
+#     if i %2 == 0:
+#         print(i)
+
+# for i in range(1,21):
+#     if i %2 !=0:
+#         print(i)
+
+# num = 5
+
+# for i in range(1,11):
+#     print(num, "x", i, "=", num*i)
+
+# total = 0
+
+# for i in range(1,11):
+#     total = total + i
+
+# print("Total: ",total)
+
+# num = 5
+# fact = 1
+
+# for i in range(1,num, + 1):
+#     fact = fact * i
+
+# print("Factorial: ", fact)
+
+# chars = "Python"
+
+# for char in chars:
+#     print(char)
+
+# names = ["Aarti","Suraj","Samyak","Tejas","Om","Yash","Yash"]
+
+# for name in names:
+#     print (name)
+
+# num =[10,30,20,45,40,200,60,202,756]
+
+# largest = num[0]
+
+# for i in num:
+#     if i > largest:
+#         largest = i
+
+# print("The Largest number: ",largest)
+
+# text = "python programming"
+# count = 0
+
+# for char in text:
+#     if char in "aeiou":
+#         count += 1
+
+# print("Number of vowels: ",count)
+
+# While loop
+
+# i = 1
+# while i <= 10:
+#     print(i)
+#     i+=1
+
+
+# i = 1
+# total = 0
+
+# while i <=10:
+#     total += i
+#     i += 1
+
+# print("Total: ",total)
+
+# num = 12345
+# reverse = 0
+
+# while num > 0:
+#     digit = num % 10
+#     reverse = reverse * 10 + digit 
+#     num //= 10
+
+
+# print("Reverse number: ",reverse)

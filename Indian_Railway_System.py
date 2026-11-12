@@ -95,20 +95,65 @@ seat_numbers = [1, 2, 3, 4, 5]
 
 # While Loop - Booking System Menu 
 
-print("\n=== Booking Menu ===")
-choice = 0
+# print("\n=== Booking Menu ===")
+# choice = 0
 
-while choice != 3:
-    print("1. Book Ticket")
-    print("2. Check Status")
-    print("3. Exit")
-    choice = int(input("Enter your choice: "))
+# while choice != 3:
+#     print("1. Book Ticket")
+#     print("2. Check Status")
+#     print("3. Exit")
+#     choice = int(input("Enter your choice: "))
 
-    if choice == 1:
-        print("Booking ticket .....")
-    elif choice == 2:
-        print("Checking Status")
-    elif choice == 3:
-        print("Thank you for using Indian Railways!")
-    else:
-        print("Invalid Choice!")
+#     if choice == 1:
+#         print("Booking ticket .....")
+#     elif choice == 2:
+#         print("Checking Status")
+#     elif choice == 3:
+#         print("Thank you for using Indian Railways!")
+#     else:
+#         print("Invalid Choice!")
+
+
+# Ticket Price Calculator
+
+# def calculate_ticket_price(distance,class_type):
+#     base_rate = 0.5
+
+#     if class_type == "Sleeper":
+#         multiplier = 1.0
+#     elif class_type == "AC 3 Tier":
+#         multiplier = 1.5
+#     elif class_type == "AC 2 Tier":
+#         multiplier = 2.0
+#     elif class_type == "AC 1 Class":
+#         multiplier = 3.0
+#     else:
+#         multiplier = 1.0
+
+#     price = distance * base_rate * multiplier
+
+#     return round(price,2)
+
+# distance = 500
+# class_type = "Sleeper"
+# price = calculate_ticket_price(distance,class_type)
+
+# print(f"Price for {distance}km in {class_type}:₹{price}")
+
+# Ticket Booking 
+
+# def book_ticket(passenger_name,age,destination,class_type = "Sleeper"):
+#     ticket = {"Passenger_Name": passenger_name,"Age":age,"Destination":destination,"Booking ID":f"BK{hash(passenger_name)% 10000:04d}"}
+#     return ticket
+
+# def get_passenger_details(*args,**kwargs):
+#     print("Positional arguments: ",args)
+#     print("Keyword arguments: ",kwargs)
+
+# ticket1 = book_ticket("Rahul Kumar",28,"Mumbai")
+# ticket2 = book_ticket("Priya Singh",32,"Delhi","AC 3 Tier")
+
+# print("\nTicket 1: ",ticket1)
+# print("Ticket 2: ",ticket2)
+
+# get_passenger_details("Rahul",28,"Mumbai",class_type = "Sleeper",meal_preference = "Veg")
