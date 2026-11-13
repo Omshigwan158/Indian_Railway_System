@@ -298,3 +298,86 @@ total = 0
 
 
 # print("Reverse number: ",reverse)
+
+# def greet():
+#     print("Hello Mister/Miss!!")
+
+# greet()
+
+# def greet():
+#     name = input("Enter your name!: ")
+#     print(f"Hello! {name}! How are you?")
+
+# greet()
+
+# def greet(name):
+#     print(f"Hello! {name}! How are you?")
+
+# greet("OM")
+
+# def greet(name="Guest"):
+#     print(f"Hello! {name}! How are you?")
+
+# greet("Om")
+
+# def welcome():
+#     print("Welcome to the Professinal Course!!")
+#     print("Lets Learn Data Science!")
+
+# welcome()
+
+# def age_verification():
+#     age = int(input("Enter your age:"))
+
+#     if age > 18:
+#         print("Applicable for the license!!")
+#     else:
+#         print("Try Again Next Time")
+
+# age_verification()
+
+# def login(user_name):
+#     password=input("Enter your Password:")
+
+#     while password != "om56780":
+#         password = input("Enter Your Password!: ")
+#         print("Wrong Password")
+#     else:
+#         print(f"Hello! {user_name}")
+# login("om")
+
+# def add(a,b):
+#     return a+b
+
+# def multiply(x,y):
+#     print(x*y)
+
+# add(2,3)
+# multiply(2,3)
+
+# print("Add: ",add(2,3))
+# print("Multiply: ",multiply(2,3))
+
+# def student(name,age):
+#     print(f"{name} is {age} years old!")
+
+# student(age=21,name="Om")
+
+
+# def total_score(*marks):
+#     print("Marks: ",marks)
+#     print("Total Score: ",sum(marks))
+#     import numpy as np
+#     print("Percentage: ",np.mean(marks))
+# total_score(85,97,99)
+
+def employee_details(**details):
+    for key,value in details.items():
+        print(key,":",value)
+
+employee_details(
+    Emp_name = "Om",
+    Age = 27,
+    Department = "IT",
+    Salary = "15k"
+)
