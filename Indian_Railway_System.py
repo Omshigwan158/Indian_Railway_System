@@ -158,3 +158,60 @@ seat_numbers = [1, 2, 3, 4, 5]
 
 # get_passenger_details("Rahul",28,"Mumbai",class_type = "Sleeper",meal_preference = "Veg")
 
+#List
+
+# states = ["Maharashtra", "Kerala", "Punjab","Tamil Nadu","Gujarat"]
+
+# print("Original List:", states)
+
+# # states.append("Karnataka")
+# # states.insert(2, "Rajasthan")
+# # print("After Append & Insert:", states)
+
+# # Extend with another list
+# states.extend(["Goa","Bihar"])
+# print("After Extend:", states)
+
+# # Remove elements
+# states.remove("Punjab")
+# popped = states.pop()
+# print("Removed Element:", popped)
+# print("After Remove & Pop:", states)
+
+# Sorting & Reversing
+
+# states.sort()
+# print("Sorted List:", states)
+# states.reverse()
+# print("Reversed List:", states)
+
+# # Index & Count
+# print("Index of Kerala:", states.index("Kerala"))
+# print("Index of Kerala:", states.count("Kerala"))
+
+# # Copy & Clear
+# copy_status = states.copy()
+# print("Copied List:", copy_status)
+# states.clear()
+# print("Cleared List:",states)
+
+# Tulpe
+cities = ("Mumbai","Delhi","Bengaluru","Chennai","Kolkata","Mumbai")
+
+print("Tulpe:", cities)
+
+# Count
+print("Count of Mumbai:", cities.count("Mumbai"))
+
+#Index
+print("Index of Chennai:", cities.index("Chennai"))
+
+# Length
+print("Length:", len(cities))
+
+# Membership
+print("Delhi in tulpe?", "Delhi" in cities)
+
+#Min & Max (alphabetical)
+print("Min:", min(cities))
+print("Max:", max(cities))
