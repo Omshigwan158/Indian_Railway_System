@@ -178,40 +178,176 @@ seat_numbers = [1, 2, 3, 4, 5]
 # print("Removed Element:", popped)
 # print("After Remove & Pop:", states)
 
-# Sorting & Reversing
+# Sorting & Reversing------------------------------------------------------------------------------
 
 # states.sort()
 # print("Sorted List:", states)
 # states.reverse()
 # print("Reversed List:", states)
 
-# # Index & Count
+# # Index & Count------------------------------------------------------------------------------
 # print("Index of Kerala:", states.index("Kerala"))
 # print("Index of Kerala:", states.count("Kerala"))
 
-# # Copy & Clear
+# # Copy & Clear------------------------------------------------------------------------------
 # copy_status = states.copy()
 # print("Copied List:", copy_status)
 # states.clear()
 # print("Cleared List:",states)
 
-# Tulpe
-cities = ("Mumbai","Delhi","Bengaluru","Chennai","Kolkata","Mumbai")
+# Tulpe------------------------------------------------------------------------------
+# cities = ("Mumbai","Delhi","Bengaluru","Chennai","Kolkata","Mumbai")
 
-print("Tulpe:", cities)
+# print("Tulpe:", cities)
 
-# Count
-print("Count of Mumbai:", cities.count("Mumbai"))
+# # Count------------------------------------------------------------------------------
+# print("Count of Mumbai:", cities.count("Mumbai"))
 
-#Index
-print("Index of Chennai:", cities.index("Chennai"))
+# #Index------------------------------------------------------------------------------
+# print("Index of Chennai:", cities.index("Chennai"))
 
-# Length
-print("Length:", len(cities))
+# # Length------------------------------------------------------------------------------
+# print("Length:", len(cities))
 
-# Membership
-print("Delhi in tulpe?", "Delhi" in cities)
+# # Membership------------------------------------------------------------------------------
+# print("Delhi in tulpe?", "Delhi" in cities)
 
-#Min & Max (alphabetical)
-print("Min:", min(cities))
-print("Max:", max(cities))
+# #Min & Max (alphabetical)
+# print("Min:", min(cities))
+# print("Max:", max(cities))
+
+# Dictionary------------------------------------------------------------------------------
+# capitals = {
+#    "Maharashtra": "Mumbai",
+#    "Kerala": "Thiruvananthapuram",
+#    "Tamil Nadu": "Chennai",
+#    "Gurjarat": "Gandhinagar"
+# }
+
+# print ("Dictionary:",capitals)
+
+# # Get & Access
+# print("Capital of Kerala:", capitals.get("Kerala"))
+
+# # Keys, Values, Items
+# print("States:", capitals.keys())
+# print("Capitals:", capitals.values())
+# print("Pairs:", capitals.items())
+
+# Update & Add------------------------------------------------------------------------------
+# capitals.update({"Karnataka": "Bengaluru"})
+# capitals["Punjab"] = "Chandigarh"
+# print("After Update:",capitals)
+
+# # Remove------------------------------------------------------------------------------
+# capitals.pop("Tamil Nadu")
+# capitals.popitem()
+# print("After Pop & Popitem:",capitals)
+
+# # Copy & Clear------------------------------------------------------------------------------
+# copy_caps = capitals.copy()
+# capitals.clear()
+# print("Copied:",copy_caps)
+# print("Cleared:",capitals)
+
+# Set 
+# languages = {"Hindi","English","Marathi","Tamil","Telugu"}
+
+# print("Original Set:", languages)
+
+# # Add & Remove
+# languages.add("Gurjarati")
+# languages.discard("English")
+# print("After Add & Discard:",languages)
+
+# # Remove (error if not present)
+# languages.remove("Hindi")
+
+# # Set Operations
+# south = {"Tamil","Telugu","Kannada"}
+# print("Union:", languages.union(south))
+# print("Intersection:",languages.intersection(south))
+# print("Difference:",languages.difference(south))
+# print("Symmertic Difference:", languages.symmetric_difference(south))
+
+# # Copy & Clear
+# copy_lang = languages.copy()
+# languages.clear()
+# print("Copied:", copy_lang)
+
+# String
+# movie = "Sholay is a Classic Bollywood Movie"
+
+# print("Original:", movie)
+
+# # Case
+# # print(movie.upper())
+# # print(movie.lower())
+# # print(movie.title())
+# # print(movie.capitalize())
+# # print(movie.swapcase())
+
+# # # Check
+# # print(movie.startswith("Sholay"))
+# # print(movie.endswith("Movie"))
+# # print("Is Alpha?",movie.isalpha())
+# # print("Is Digit?", movie.isdigit())
+
+# # Find & Replace
+# print("Find 'Classic':", movie.find("Classic"))
+# print(movie.replace("Classic","Legendary"))
+
+# # Split & Join
+# words = movie.split()
+# print("Split:", words)
+# joined = "-".join(words)
+# print("Joined:",joined)
+
+# # Strip
+# line = "    Jai Hind       "
+# print("Stripped:", line.strip())
+# print("Left Strip:", line.strip())
+# print("Right Strip:", line.rstrip())
+
+# # Count & Index
+# print("Count of 'o':", movie.count("o"))
+# print("Index of 'Bollywood':", movie.index("Bollywood"))
+
+# # Length
+# print("Length:", len(movie))
+
+# Date & Time
+import datetime
+
+# Current date & time
+now = datetime.datetime.now()
+print("Now:",now)
+
+# Today
+today = datetime.date.today()
+
+# Specific date (Republic day)
+republic_day = datetime.date(1950,1,26)
+print("Republic Day:", republic_day.strftime("%d-%B-%Y"))
+
+# Time Difference
+diff = today - republic_day
+print("Days since Republic Day:",diff.days)
+
+# Current components
+print("Year:",now.year)
+print("Month:",now.month)
+print("Day:", now.day)
+print("Hour:", now.hour)
+print("Minute:",now.minute)
+print("Second:", now.second)
+
+# Create a time object
+t = datetime.time(10, 30, 15)
+print ("Custom Time:", t)
+
+# Combine date & Time
+dt = datetime.datetime.combine(today,t)
+
+# Formatting 
+print("Formatted:",now.strftime("%A, %d %B %Y, %I:%M %p"))
