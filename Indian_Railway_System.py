@@ -450,3 +450,76 @@ seat_numbers = [1, 2, 3, 4, 5]
 # print("==Train Types==")
 # print(f"Express Train:{express.get_info()}")
 # print(f"Passenger Train: {passenger.get_info()}")
+
+# Encapsulation
+
+class BankAccount:
+
+
+    def __init__(self, account_number ,initial_balance=0):
+        self._account_number = account_number #protected attribute
+        self._balance = initial_balance       #private attribute
+
+    @property
+    def balance(self):
+        return self._balance
+
+    @property
+    def account_number(self):
+        return self._account_number
+
+    def deposit(self,amount):
+        if amount > 0:
+            self._balance += amount
+            print(f"Deposited Amount: ₹{amount}. New Balance: ₹{self._balance}")
+        else:
+            print("Invalid Amount!!")
+
+    def withdraw(self,amount):
+        if 0 < amount <= self._balance:
+            self._balance -= amount
+            print(f"Withdrawn Amount: ₹{amount}. New Balance: ₹{self._balance}")
+        else:
+            print("Invalid withdrawal or insufficient funds!!")
+
+class Ticket:
+
+    def __init__(self,passenger_name,train_number,seat_number):
+        self._passenger_name = passenger_name
+        self._train_number = train_number
+        self._seat_number = seat_number
+        self._is_confirmed = False
+
+    def confirm_ticket(self):
+        self._is_confirmed = True
+
+    def Details(self):
+        status  = "Confirmed" if self._is_confirmed else "Pending"
+        return {
+            "Passenger: ":self._passenger_name,
+            "Train: ":self._train_number,
+            "Seat Number: ":self._seat_number,
+            "Status: ":status
+        }
+
+print("==Bank Account==")
+
+account = BankAccount("IR123456789")
+account.deposit(1000)
+account.withdraw(500)
+print("Current Balance: ₹",account.balance)
+
+print("\n==Ticket==")
+
+ticket = Ticket("Om Shigwan",12301,"A5")
+print("Before Confirmation: ",ticket.Details())
+ticket.confirm_ticket()
+print("After Confirmation: ",ticket.Details())
+
+# Polymorphism
+
+class PaymentMethod:
+    def process_payment(self,amount)
+        raise NotImplementedError("Subclass must implement abstract method")
+
+class CreditCard(PaymentMethod):
